@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamHomes Imobiliária</title>
+  <meta name="description" content="DreamHomes: compra, venda e aluguel de imóveis exclusivos. Encontre seu lar ideal com um buscador avançado e atendimento personalizado." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="inicio">
+    <nav class="container-nav" aria-label="Navegação principal">
+      <ul>
+        <li class="marca">DreamHomes</li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#quienes-somos">Quem Somos</a></li>
+        <li><a href="#propiedades">Imóveis</a></li>
+        <li><a href="#servicios">Serviços</a></li>
+        <li><a href="#contacto">Contato</a></li>
+        <li><a href="#login">Login/Sign</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text-bottom" role="region" aria-labelledby="titulo-hero">
+      <h1 id="titulo-hero">DreamHomes Imobiliária</h1>
+      <p>Encontre a casa dos seus sonhos</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== SEÇÃO QUEM SOMOS ===== -->
+    <section id="quienes-somos" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>🏛️ Quem Somos</h2>
+        <p>Na DreamHomes, acreditamos que cada espaço tem uma história para contar. Somos uma empresa dedicada a oferecer soluções imobiliárias exclusivas, unindo design, qualidade e compromisso com nossos clientes. Nosso objetivo é ajudá-lo a encontrar o lar ideal ou o investimento perfeito, garantindo transparência, confiança e excelência em cada etapa.</p>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO IMÓVEIS + BUSCADOR ===== -->
+    <section id="propiedades" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>🏠 Imóveis em Destaque</h2>
+        <p class="subtitulo-seccion">Descubra nossa seleção de residências exclusivas</p>
+
+        <section class="seccion-busqueda">
+          <div class="contenedor-busqueda">
+            <h2>🔍 Encontre seu Imóvel Ideal</h2>
+            <form id="form-filtros" class="filtros-avanzados">
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="finalidad">🎯 Finalidade</label>
+                  <select id="finalidad" class="filtro-select">
+                    <option value="">Qualquer</option>
+                    <option value="Comprar">Comprar</option>
+                    <option value="Alquilar">Alugar</option>
+                    <option value="Investir">Investir</option>
+                  </select>
+                </div>
+                <div class="filtro-grupo">
+                  <label for="categoria">🏠 Categoria</label>
+                  <select id="categoria" class="filtro-select">
+                    <option value="">Todas</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Apartamento">Apartamento</option>
+                    <option value="Chalet">Chalé</option>
+                    <option value="Loft">Loft</option>
+                    <option value="Villa">Vila</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="ciudad">🏙️ Cidade</label>
+                  <select id="ciudad" class="filtro-select">
+                    <option value="">Todas</option>
+                    <option value="Riviera">Riviera</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Curitiba">Curitiba</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Florianópolis">Florianópolis</option>
+                    <option value="Porto Alegre">Porto Alegre</option>
+                  </select>
+                </div>
+                <div class="filtro-grupo">
+                  <label for="barrio">📍 Bairro</label>
+                  <select id="barrio" class="filtro-select">
+                    <option value="">Todos</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Zona Residencial Norte">Zona Residencial Norte</option>
+                    <option value="Área Comercial Leste">Área Comercial Leste</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="dormitorios">🛏️ Quartos</label>
+                  <select id="dormitorios" class="filtro-select">
+                    <option value="">Qualquer quantidade</option>
+                    <option value="1">1 quarto</option>
+                    <option value="2">2 quartos</option>
+                    <option value="3">3 quartos</option>
+                    <option value="4">4+ quartos</option>
+                  </select>
+                </div>
+                <div class="filtro-grupo">
+                  <label for="precioMax">💰 Preço Máx.</label>
+                  <select id="precioMax" class="filtro-select">
+                    <option value="">Sem limite</option>
+                    <option value="100000">R$100.000</option>
+                    <option value="200000">R$200.000</option>
+                    <option value="300000">R$300.000</option>
+                    <option value="500000">R$500.000</option>
+                    <option value="750000">R$750.000</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="fila-filtros">
+                <div class="filtro-grupo full-width">
+                  <label for="textoLibre">🔍 Busca Livre</label>
+                  <input id="textoLibre" type="text" class="busqueda-libre" placeholder="Palavras-chave: piscina, jardim, garagem..." />
+                </div>
+              </div>
+
+              <div class="fila-filtros">
+                <div class="filtro-grupo">
+                  <label for="codigo">🔢 Código</label>
+                  <input id="codigo" type="text" class="codigo-input" placeholder="Código do imóvel (ex: DH-001)" />
+                </div>
+                <div class="grupo-botones">
+                  <button id="btn-buscar" class="btn-buscar" type="submit">🚀 Buscar</button>
+                  <button id="btn-limpiar" class="btn-limpiar" type="button">🔄 Limpar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <div class="resultados-header" aria-live="polite">
+          <div class="contador-resultados">Resultados: <strong id="contador">0</strong></div>
+          <div class="ordenar-por">
+            <label for="ordenar">Ordenar:</label>
+            <select id="ordenar" class="filtro-select" onchange="filtrar()">
+              <option value="">Padrão</option>
+              <option value="precio-asc">Preço ↑</option>
+              <option value="precio-desc">Preço ↓</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="resultados" class="grid-propiedades"></div>
+      </div>
+    </section>
+
+    <section id="servicios" class="contenido-seccion seccion-alternativa">
+      <div class="seccion-contenido">
+        <h2>🛠️ Serviços</h2>
+        <p>Oferecemos acompanhamento completo: avaliação, home staging, fotografia profissional, marketing digital, assessoria jurídica e gestão de locações. Nossa equipe cuida de tudo para que você possa focar na sua próxima mudança.</p>
+      </div>
+    </section>
+
+    <section id="mision" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>🎯 Missão & Valores</h2>
+        <p>Conectar pessoas a espaços que inspiram, de forma transparente e humana. Valorizamos a honestidade, o design com propósito e os relacionamentos duradouros.</p>
+      </div>
+    </section>
+
+    <section id="nuestro-equipo" class="contenido-seccion seccion-alternativa">
+      <div class="seccion-contenido">
+        <h2>👔 Nossa Equipe</h2>
+        <p>A equipe da DreamHomes é composta por profissionais experientes no mercado imobiliário, arquitetura e gestão de imóveis. Todos compartilham a mesma visão: oferecer um serviço personalizado que supere as expectativas dos nossos clientes. Somos movidos pela paixão de criar lares onde as pessoas possam realizar seus sonhos.</p>
+      </div>
+    </section>
+
+    <section id="inversores" class="contenido-seccion">
+      <div class="seccion-contenido">
+        <h2>💼 Investidores</h2>
+        <p>Na DreamHomes, trabalhamos lado a lado com nossos investidores para desenvolver projetos com alto potencial de rentabilidade e sustentabilidade. Acreditamos em parcerias estratégicas e no valor da confiança mútua. Se você procura investir em imóveis com visão de futuro, nossa equipe terá prazer em assessorá-lo em cada etapa.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contenido-seccion seccion-contacto">
+      <div class="seccion-contenido">
+        <h2>✉️ Contato</h2>
+        <div class="info-contacto">
+          <p>📍 <strong>Endereço:</strong> Av. Horizonte Dourado 125, Cidade Central</p>
+          <p>📞 <strong>Telefone:</strong> +55 (11) 2389-045</p>
+          <p>📧 <strong>Email:</strong> contato@dreamhomes.com</p>
+          <p>🕓 <strong>Horário de atendimento:</strong> Segunda a Sexta, 9h – 18h</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/buscador.js"></script>
+</body>
+</html>
